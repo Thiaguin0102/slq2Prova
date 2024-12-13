@@ -5,8 +5,8 @@ USE produtos;
 CREATE TABLE produtos (
 id_Produtos INT AUTO_INCREMENT PRIMARY KEY,
 nome_produto VARCHAR(50) NOT NULL,
-qualtidade INT,
-preco DECIMAL(5,2)
+qualtidade INT NOT NULL,
+preco DECIMAL(5,2) NOT NULL
 );
 
 INSERT INTO produtos (nome_produto, qualtidade, preco) VALUES
